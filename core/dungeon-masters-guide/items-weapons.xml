@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -58,6 +58,7 @@
 			
 			
 			
+			
 			</p>
 			<p class="indent">
 				<em>"Tymora’s favor shifts with the wind—best to flow with it before misfortune catches you."</em>
@@ -101,9 +102,11 @@
 			<p class="indent">
 				<strong>Duration:</strong> 1 minute (10 turns).
 			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.
+			
 			
 			</p>
 		</description>
@@ -124,9 +127,11 @@
 			<p>A vibrant mushroom with distinct spots. When consumed, it restores vitality.</p>
 			<p class="indent">
 				<strong>Effect:</strong> Restores 5 hit points.
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.
+			
 			</p>
 		</description>
 		<setters>
@@ -146,9 +151,9 @@
 			<p>A plain white mushroom. It serves as a common food source.</p>
 			<p class="indent">
 				<strong>Effect:</strong> Regular food).
+			
 			</p>
-			<p class="indent">
-			</p>
+			<p class="indent"></p>
 		</description>
 		<setters>
 			<set name="category">Mushrooms</set>
@@ -167,9 +172,11 @@
 			<p>A dull brown mushroom that appears unappetizing. It is highly poisonous.</p>
 			<p class="indent">
 				<strong>Effect:</strong> When consumed to apply to a weapon or projectile, it deals 1d6 poison damage.
+			
 			</p>
 			<p class="indent">
-				<strong>Action:</strong> Bonus Action.
+				<strong>Action:</strong> 1 Action.
+			
 			</p>
 		</description>
 		<setters>
