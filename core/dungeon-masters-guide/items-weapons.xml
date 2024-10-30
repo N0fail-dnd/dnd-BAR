@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -36,8 +36,8 @@
 			<set name="attunement">true</set>
 		</setters>
 		<rules>
-			<stat name="stealth:passive" value="4"/>
-			<stat name="insight:passive" value="4"/>
+			<stat name="stealth:misc" value="4"/>
+			<stat name="insight:misc" value="4"/>
 		</rules>
 	</element>
 </elements>
