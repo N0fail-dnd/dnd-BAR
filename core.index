@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="dungeon-masters-guide.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide.index" />
+		<file name="dungeon-masters-guide.index" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide.index" />
 	</files>
 </index>
