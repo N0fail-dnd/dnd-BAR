@@ -3,10 +3,78 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.0.9">
+		<update version="0.1.1">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
+	<element name="Chain Mail +1 Gloves" type="Item" source="Core" id="ID_ARMOR_CHAIN_MAIL_GLOVES_1">
+		<supports>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</supports>
+		<description>
+			<p>Chain Mail armor with +1 Gloves.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="65">21 lb.</set>
+			<set name="container">Heavy</set>
+			<set name="armor">Heavy</set>
+			<set name="weapon"/>
+			<set name="shield"/>
+			<set name="slot">body</set>
+			<set name="range"/>
+			<set name="damage"/>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="17" bonus="Armor"/>
+		</rules>
+	</element>
+	<element name="Leather +1 Gloves" type="Item" source="Core" id="ID_ARMOR_LEATHER_W_GLOVES_1">
+		<supports>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</supports>
+		<description>
+			<p>lEATHER armor with +1 Gloves.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">11</set>
+			<set name="weight" lb="65">11 lb.</set>
+			<set name="container">Light</set>
+			<set name="armor">Light</set>
+			<set name="weapon"/>
+			<set name="shield"/>
+			<set name="slot">body</set>
+			<set name="range"/>
+			<set name="damage"/>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="12"/>
+			<stat name="ac:armored:enhancement" value="dexterity:modifier"/>
+		</rules>
+	</element>
+	<element name="Pendant of Tymora" type="Magic Item" source="Homebrew BAR" id="ID_PENDANT_OF_TYMORA">
+		<description>
+			<p>Fortune favors the bold, and Tymora’s touch is never far from her faithful. This delicate pendant, adorned with a silver coin engraved with the Lady of Luck’s smile, glimmers faintly when danger is near.</p>
+			<p class="indent">
+				<strong>Reaction:</strong> When an enemy makes an attack against you (hit or miss), you can move 5 feet in any direction.
+			
+			
+			</p>
+			<p class="indent">
+				<em>"Tymora’s favor shifts with the wind—best to flow with it before misfortune catches you."</em>
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+		</setters>
+		<sheet action="Reaction" usage="1/Consumed">
+			<description>You may move 5 ft in any direction when attacked, whether the attack hits or misses.</description>
+		</sheet>
+	</element>
 	<element name="Shadowseer’s Charm" type="Magic Item" source="Homebrew BAR" id="ID_SHADOWSEERS_CHARM">
 		<description>
 			<p>A pendant of dark glass veined with silver, it seems to dim the air around it. Worn in silence, it sharpens the mind to hidden truths and muffles every step, guiding its bearer through shadow and deceit.</p>
@@ -28,8 +96,12 @@
 	</element>
 	<element name="Sleeping Powder" type="Magic Item" source="Homebrew" id="ID_CUSTOM_SLEEPING_POWDER">
 		<description>
-			<p>
-				<strong>It lasts for 4 turns and is a bonus action.</strong>
+			<p>A small leather pouch containing finely ground, pale-blue powder. When sprinkled, the powder releases a drowsy mist that causes a single creature to fall into a magical slumber.</p>
+			<p class="indent">
+				<strong>Duration:</strong> 1 minute (10 turns).
+			</p>
+			<p class="indent">
+				<strong>Action:</strong> Bonus Action.
 			</p>
 		</description>
 		<setters>
@@ -40,5 +112,8 @@
 			<set name="sheet-modifier">true</set>
 			<set name="name-format">Sleeping Powder</set>
 		</setters>
+		<sheet action="Bonus Action" usage="5/Consumed">
+			<description>Use a bonus action to sprinkle sleeping powder on a target, causing it to fall asleep for 1 minute (10 turns). 5 uses, consumed on use.</description>
+		</sheet>
 	</element>
 </elements>
