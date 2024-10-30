@@ -22,4 +22,23 @@
 			<set name="name-format">{{parent}} +{{enhancement}}</set>
 		</setters>
 	</element>
+	<element name="Shadowseer’s Charm" type="Magic Item" source="Homebrew BAR" id="ID_SHADOWSEERS_CHARM">
+		<description>
+			<p>A pendant of dark glass veined with silver, it seems to dim the air around it. Worn in silence, it sharpens the mind to hidden truths and muffles every step, guiding its bearer through shadow and deceit.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="stealth:passive" value="4"/>
+			<stat name="insight:passive" value="4"/>
+		</rules>
+	</element>
 </elements>
