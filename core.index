@@ -3,7 +3,6 @@
 	<info>
 		<name>Core</name>
 		<description>The content from the core rulebooks.</description>
-		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
 		<update version="0.2.5">
 			<file name="core.index" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core.index" />
 		</update>
