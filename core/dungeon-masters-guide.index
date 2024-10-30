@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 	</files>
 </index>
