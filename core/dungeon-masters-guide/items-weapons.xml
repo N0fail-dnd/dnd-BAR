@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -119,7 +119,7 @@
 			<description>Use a bonus action to sprinkle sleeping powder on a target, causing it to fall asleep for 1 minute (10 turns). 5 uses, consumed on use.</description>
 		</sheet>
 	</element>
-	<element name="Spotted Mushroom" type="Consumable" source="Homebrew" id="ID_CUSTOM_SPOTTED_MUSHROOM">
+	<element name="Spotted Mushroom" type="Item" source="Homebrew" id="ID_CUSTOM_SPOTTED_MUSHROOM">
 		<description>
 			<p>A vibrant mushroom with distinct spots. When consumed, it restores vitality.</p>
 			<p class="indent">
@@ -141,7 +141,7 @@
 			<description>Consume this mushroom as a bonus action to restore 5 hit points.</description>
 		</sheet>
 	</element>
-	<element name="White Mushroom" type="Consumable" source="Homebrew" id="ID_CUSTOM_WHITE_MUSHROOM">
+	<element name="White Mushroom" type="Item" source="Homebrew" id="ID_CUSTOM_WHITE_MUSHROOM">
 		<description>
 			<p>A plain white mushroom. It serves as a common food source.</p>
 			<p class="indent">
@@ -162,7 +162,7 @@
 			<description>Consume this mushroom as a bonus action for nourishment.</description>
 		</sheet>
 	</element>
-	<element name="Brown Mushroom" type="Consumable" source="Homebrew" id="ID_CUSTOM_BROWN_MUSHROOM">
+	<element name="Brown Mushroom" type="Item" source="Homebrew" id="ID_CUSTOM_BROWN_MUSHROOM">
 		<description>
 			<p>A dull brown mushroom that appears unappetizing. It is highly poisonous.</p>
 			<p class="indent">
