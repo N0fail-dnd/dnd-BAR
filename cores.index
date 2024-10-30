@@ -4,7 +4,7 @@
 		<name>Core</name>
 		<description>The content from the core rulebooks.</description>
 		<update version="0.2.7">
-			<file name="core.index" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/cores.index" />
+			<file name="cores.index" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/cores.index" />
 		</update>
 	</info>
 	<files>
