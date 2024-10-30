@@ -57,6 +57,7 @@
 				<strong>Reaction:</strong> When an enemy makes an attack against you (hit or miss), you can move 5 feet in any direction.
 			
 			
+			
 			</p>
 			<p class="indent">
 				<em>"Tymora’s favor shifts with the wind—best to flow with it before misfortune catches you."</em>
@@ -99,9 +100,11 @@
 			<p>A small leather pouch containing finely ground, pale-blue powder. When sprinkled, the powder releases a drowsy mist that causes a single creature to fall into a magical slumber.</p>
 			<p class="indent">
 				<strong>Duration:</strong> 1 minute (10 turns).
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.
+			
 			</p>
 		</description>
 		<setters>
@@ -114,6 +117,71 @@
 		</setters>
 		<sheet action="Bonus Action" usage="5/Consumed">
 			<description>Use a bonus action to sprinkle sleeping powder on a target, causing it to fall asleep for 1 minute (10 turns). 5 uses, consumed on use.</description>
+		</sheet>
+	</element>
+	<element name="Spotted Mushroom" type="Consumable" source="Homebrew" id="ID_CUSTOM_SPOTTED_MUSHROOM">
+		<description>
+			<p>A vibrant mushroom with distinct spots. When consumed, it restores vitality.</p>
+			<p class="indent">
+				<strong>Effect:</strong> Restores 5 hit points.
+			</p>
+			<p class="indent">
+				<strong>Action:</strong> Bonus Action.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Mushrooms</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">none</set>
+			<set name="sheet-modifier">true</set>
+			<set name="name-format">Spotted Mushroom</set>
+		</setters>
+		<sheet action="Bonus Action" usage="1/Consumed">
+			<description>Consume this mushroom as a bonus action to restore 5 hit points.</description>
+		</sheet>
+	</element>
+	<element name="White Mushroom" type="Consumable" source="Homebrew" id="ID_CUSTOM_WHITE_MUSHROOM">
+		<description>
+			<p>A plain white mushroom. It serves as a common food source.</p>
+			<p class="indent">
+				<strong>Effect:</strong> Regular food).
+			</p>
+			<p class="indent">
+			</p>
+		</description>
+		<setters>
+			<set name="category">Mushrooms</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">none</set>
+			<set name="sheet-modifier">true</set>
+			<set name="name-format">White Mushroom</set>
+		</setters>
+		<sheet action="Bonus Action" usage="1/Consumed">
+			<description>Consume this mushroom as a bonus action for nourishment.</description>
+		</sheet>
+	</element>
+	<element name="Brown Mushroom" type="Consumable" source="Homebrew" id="ID_CUSTOM_BROWN_MUSHROOM">
+		<description>
+			<p>A dull brown mushroom that appears unappetizing. It is highly poisonous.</p>
+			<p class="indent">
+				<strong>Effect:</strong> When consumed to apply to a weapon or projectile, it deals 1d6 poison damage.
+			</p>
+			<p class="indent">
+				<strong>Action:</strong> Bonus Action.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Mushrooms</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">none</set>
+			<set name="sheet-modifier">true</set>
+			<set name="name-format">Brown Mushroom</set>
+		</setters>
+		<sheet action="Bonus Action" usage="1/Consumed">
+			<description>Consume this mushroom as an action to apply it to a weapon or projectile. It deals 1d6 poison damage on failed save.</description>
 		</sheet>
 	</element>
 </elements>
