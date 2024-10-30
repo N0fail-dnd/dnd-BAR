@@ -40,4 +40,19 @@
 			<stat name="insight:misc" value="4"/>
 		</rules>
 	</element>
+	<element name="Sleeping Powder" type="Magic Item" source="Homebrew" id="ID_CUSTOM_SLEEPING_POWDER">
+		<description>
+			<p>
+				<strong>It lasts for 4 turns and is a bonus action.</strong>
+			</p>
+		</description>
+		<setters>
+			<set name="category">Alchemical Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="rarity">Uncommon</set>
+			<set name="proficiency">none</set>
+			<set name="sheet-modifier">true</set>
+			<set name="name-format">Sleeping Powder</set>
+		</setters>
+	</element>
 </elements>
