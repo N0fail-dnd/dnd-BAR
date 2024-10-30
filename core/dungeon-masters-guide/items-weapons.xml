@@ -7,20 +7,6 @@
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
-	<element name="Weapon, +1123" type="Magic Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_MAGIC_ITEM_WEAPON_1123">
-		<description>
-			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
-		</description>
-		<setters>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="any">Weapon</set>
-			<set name="rarity">Uncommon</set>
-			<set name="enhancement">1</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format">{{parent}} +{{enhancement}}</set>
-		</setters>
-	</element>
 	<element name="Shadowseer’s Charm" type="Magic Item" source="Homebrew BAR" id="ID_SHADOWSEERS_CHARM">
 		<description>
 			<p>A pendant of dark glass veined with silver, it seems to dim the air around it. Worn in silence, it sharpens the mind to hidden truths and muffles every step, guiding its bearer through shadow and deceit.</p>
