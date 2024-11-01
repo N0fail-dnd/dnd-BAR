@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -208,12 +208,12 @@
 				<strong>Greed is good</strong>" etched along its blade. A golden chain hangs from the hilt, ending with a glowing green gem that lights up the inscription with a faint, enticing glow.
 			</p>
 			<p class="indent">
-				<strong>Effect:</strong> Gain a +2 bonus to Sleight of Hand checks related to gold or treasure.
+				<strong>Effect:</strong> Gain a +2 bonus to Sleight of Hand checks related to gold or treasure while this weapon is on your person.
 			</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">150</set>
+			<set name="cost" currency="gp"></set>
 			<set name="type" addition="dagger">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
