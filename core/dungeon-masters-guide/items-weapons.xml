@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -202,7 +202,7 @@
 			<description>Consume this mushroom as an action to apply it to a weapon or projectile. It deals 1d6 poison damage on failed save.</description>
 		</sheet>
 	</element>
-	<element name="Thief's Promise" type="Magic Weapon" source="Homebrew BAR" id="ID_CUSTOM_DAGGER_THIEFS_PROMISE">
+	<element name="Thief's Promise" type="Magic Item" source="Homebrew BAR" id="ID_CUSTOM_DAGGER_THIEFS_PROMISE">
 		<description>
 			<p>This finely crafted dagger has the inscription "
 				<strong>Greed is good</strong>" etched along its blade. A golden chain hangs from the hilt, ending with a glowing green gem that lights up the inscription with a faint, enticing glow.
