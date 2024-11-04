@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.2">
+		<update version="0.2.1">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -28,7 +28,7 @@
 			<stat name="ac:armored:armor" value="17" bonus="Armor"/>
 		</rules>
 	</element>
-	<element name="Leather +1 Gloves" type="Item" source="Core" id="ID_ARMOR_LEATHER_W_GLOVES_1">
+	<element name="Studded Leather +1 Gloves" type="Item" source="Core" id="ID_ARMOR_LEATHER_W_GLOVES_1">
 		<supports>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</supports>
 		<description>
 			<p>lEATHER armor with +1 Gloves.</p>
