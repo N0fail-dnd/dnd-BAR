@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.2.3">
+		<update version="0.2.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -252,7 +252,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Jar of Poison" type="Magic Item" source="Homebrew BAR" id="ID_CUSTOM_JAR_OF_POISON">
+	<element name="Dedris Diggles Patent Pending Poison" type="Magic Item" source="Homebrew BAR" id="ID_CUSTOM_JAR_OF_POISON">
 		<description>
 			<p>A jar containing a lethal poison, designed to coat weapons or thrown items.</p>
 			<p class="indent">When applied to a weapon or thrown weapon, it adds 1d4 poison damage on the next hit within 1 minute.</p>
