@@ -57,6 +57,7 @@
 				<strong>Reaction:</strong> When an enemy makes an attack against you (hit or miss), you can move 5 feet in any direction.		
 			
 			
+			
 			</p>
 			<p class="indent">
 				<em>"Tymora’s favor shifts with the wind—best to flow with it before misfortune catches you."</em>
@@ -99,9 +100,11 @@
 			<p>A small leather pouch containing finely ground, pale-blue powder. When sprinkled, the powder releases a drowsy mist that causes a single creature to fall into a magical slumber.</p>
 			<p class="indent">
 				<strong>Duration:</strong> 1 minute (10 turns).			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.			
+			
 			</p>
 		</description>
 		<setters>
@@ -125,9 +128,11 @@
 			
 			
 			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.
+			
 			
 			
 			
@@ -151,6 +156,7 @@
 			<p>A plain white mushroom. It serves as a common food source.</p>
 			<p class="indent">
 				<strong>Effect:</strong> Regular food.
+			
 			
 			
 			
@@ -179,9 +185,11 @@
 			
 			
 			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> 1 Action.
+			
 			
 			
 			
@@ -204,11 +212,14 @@
 		<description>
 			<p>This finely crafted dagger has the inscription "
 				
+				
 				<strong>Greed is good</strong>" etched along its blade. A golden chain hangs from the hilt, ending with a glowing green gem that lights up the inscription with a faint, enticing glow.
+			
 			
 			</p>
 			<p class="indent">
 				<strong>Effect:</strong> Gain a +2 bonus to Sleight of Hand checks related to gold or treasure while this weapon is on your person.
+			
 			
 			</p>
 		</description>
@@ -249,8 +260,8 @@
 		</description>
 		<setters>
 			<set name="keywords">poison</set>
-			<set name="category">Ammunition</set>
-			<set name="type" addition="poison">Consumable</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="category">Alchemical Items</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 		</setters>
