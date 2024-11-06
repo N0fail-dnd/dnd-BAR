@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description></description>
-		<update version="0.2.4">
+		<update version="0.2.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -54,7 +54,7 @@
 		<description>
 			<p>Fortune favors the bold, and Tymora’s touch is never far from her faithful. This delicate pendant, adorned with a silver coin engraved with the Lady of Luck’s smile, glimmers faintly when danger is near.</p>
 			<p class="indent">
-				<strong>Reaction:</strong> When an enemy makes an attack against you (hit or miss), you can move 5 feet in any direction.		
+				<strong>Reaction:</strong> When an enemy makes an attack against you (hit), you can move 5 feet in any direction.		
 			
 			
 			
