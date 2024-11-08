@@ -266,4 +266,16 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
+	<element name="Piercing Arrow" type="Magic Item" source="Homebrew BAR" id="ID_CUSTOM_piercing_arrow">
+		<description>
+			<p class="indent">+1 damage on successful attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 </elements>
