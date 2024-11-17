@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
 	<info>
 		<name>Weapons</name>
-		<description></description>
+		<description />
 		<update version="0.2.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
@@ -18,14 +18,14 @@
 			<set name="weight" lb="65">21 lb.</set>
 			<set name="container">Heavy</set>
 			<set name="armor">Heavy</set>
-			<set name="weapon"/>
-			<set name="shield"/>
+			<set name="weapon" />
+			<set name="shield" />
 			<set name="slot">body</set>
-			<set name="range"/>
-			<set name="damage"/>
+			<set name="range" />
+			<set name="damage" />
 		</setters>
 		<rules>
-			<stat name="ac:armored:armor" value="17" bonus="Armor"/>
+			<stat name="ac:armored:armor" value="17" bonus="Armor" />
 		</rules>
 	</element>
 	<element name="Studded Leather +1 Gloves" type="Item" source="Core" id="ID_ARMOR_LEATHER_W_GLOVES_1">
@@ -39,15 +39,15 @@
 			<set name="weight" lb="65">11 lb.</set>
 			<set name="container">Light</set>
 			<set name="armor">Light</set>
-			<set name="weapon"/>
-			<set name="shield"/>
+			<set name="weapon" />
+			<set name="shield" />
 			<set name="slot">body</set>
-			<set name="range"/>
-			<set name="damage"/>
+			<set name="range" />
+			<set name="damage" />
 		</setters>
 		<rules>
-			<stat name="ac:armored:armor" value="12"/>
-			<stat name="ac:armored:enhancement" value="dexterity:modifier"/>
+			<stat name="ac:armored:armor" value="12" />
+			<stat name="ac:armored:enhancement" value="dexterity:modifier" />
 		</rules>
 	</element>
 	<element name="Pendant of Tymora" type="Magic Item" source="Homebrew BAR" id="ID_PENDANT_OF_TYMORA">
@@ -55,6 +55,8 @@
 			<p>Fortune favors the bold, and Tymora’s touch is never far from her faithful. This delicate pendant, adorned with a silver coin engraved with the Lady of Luck’s smile, glimmers faintly when danger is near.</p>
 			<p class="indent">
 				<strong>Reaction:</strong> When an enemy makes an attack against you (hit), you can move 5 feet in any direction.		
+			
+			
 			
 			
 			
@@ -79,7 +81,7 @@
 	<element name="Shadowseer’s Charm" type="Magic Item" source="Homebrew BAR" id="ID_SHADOWSEERS_CHARM">
 		<description>
 			<p>A pendant of dark glass veined with silver, it seems to dim the air around it. Worn in silence, it sharpens the mind to hidden truths and muffles every step, guiding its bearer through shadow and deceit.</p>
-			<p class="indent"></p>
+			<p class="indent" />
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
@@ -91,8 +93,8 @@
 			<set name="attunement">true</set>
 		</setters>
 		<rules>
-			<stat name="stealth:misc" value="4"/>
-			<stat name="insight:misc" value="4"/>
+			<stat name="stealth:misc" value="4" />
+			<stat name="insight:misc" value="4" />
 		</rules>
 	</element>
 	<element name="Sleeping Powder" type="Magic Item" source="Homebrew" id="ID_CUSTOM_SLEEPING_POWDER">
@@ -101,9 +103,13 @@
 			<p class="indent">
 				<strong>Duration:</strong> 1 minute (10 turns).			
 			
+			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.			
+			
+			
 			
 			</p>
 		</description>
@@ -129,9 +135,13 @@
 			
 			
 			
+			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> Bonus Action.
+			
+			
 			
 			
 			
@@ -161,8 +171,10 @@
 			
 			
 			
+			
+			
 			</p>
-			<p class="indent"></p>
+			<p class="indent" />
 		</description>
 		<setters>
 			<set name="category">Mushrooms</set>
@@ -186,9 +198,13 @@
 			
 			
 			
+			
+			
 			</p>
 			<p class="indent">
 				<strong>Action:</strong> 1 Action.
+			
+			
 			
 			
 			
@@ -213,7 +229,11 @@
 			<p>This finely crafted dagger has the inscription "
 				
 				
+				
+				
 				<strong>Greed is good</strong>" etched along its blade. A golden chain hangs from the hilt, ending with a glowing green gem that lights up the inscription with a faint, enticing glow.
+			
+			
 			
 			
 			</p>
@@ -221,19 +241,20 @@
 				<strong>Effect:</strong> Gain a +2 bonus to Sleight of Hand checks related to gold or treasure while this weapon is on your person.
 			
 			
+			
+			
 			</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp"></set>
+			<set name="cost" currency="gp" />
 			<set name="type" addition="dagger">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
 			<set name="weapon">Dagger</set>
 		</setters>
 		<supports>
-			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-			<!-- Adds simple weapon proficiency -->
+			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 		</supports>
 		<sheet action="Passive">
 			<description>Grants +2 to Sleight of Hand checks related to treasure or gold.</description>
@@ -283,22 +304,23 @@
 			<p>Two Barrels Strung together to be fired in quick succession.
 			</p>
 			<p class="indent">
-			<strong>Effect:</strong> Shoot 2 Darts with 1 action.
+				<strong>Effect:</strong> Shoot 2 Darts with 1 action.
+			
+			
 			
 			
 			</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp"></set>
+			<set name="cost" currency="gp" />
 			<set name="type" addition="dagger">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
 			<set name="weapon">Blowgun</set>
 		</setters>
 		<supports>
-			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-			<!-- Adds simple weapon proficiency -->
+			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 		</supports>
-		</element>
+	</element>
 </elements>
