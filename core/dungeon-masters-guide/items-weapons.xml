@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons</name>
 		<description />
-		<update version="0.2.7">
+		<update version="0.2.8">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
 		</update>
 	</info>
@@ -316,7 +316,7 @@
 			<set name="cost" currency="gp" />
 			<set name="type" addition="dagger">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="attunement">true</set>
+			<set name="attunement">false</set>
 			<set name="weapon">Blowgun</set>
 		</setters>
 		<supports>
