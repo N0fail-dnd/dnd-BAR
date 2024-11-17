@@ -278,4 +278,27 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
+	<element name="Double-Barrel Blowgun" type="Magic Item" source="Homebrew BAR" id="ID_CUSTOM_BLOWGUN_1">
+		<description>
+			<p>Two Barrels Strung together to be fired in quick succession.
+			</p>
+			<p class="indent">
+			<strong>Effect:</strong> Shoot 2 Darts with 1 action.
+			
+			
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Blowgun</set>
+		</setters>
+		<supports>
+			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+			<!-- Adds simple weapon proficiency -->
+		</supports>
+		</element>
 </elements>
