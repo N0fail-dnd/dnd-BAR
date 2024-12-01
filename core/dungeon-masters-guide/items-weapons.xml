@@ -323,4 +323,23 @@
 			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 		</supports>
 	</element>
+	<element name="Fire Maul" type="Magic Item" source="Homebrew BAR" id="ID_CUSTOM_FIRE_MAUL">
+		<description>
+			<p class="indent">
+				The axe is 1d12+1d4 +2 pierceing
+				The hammer is 1d10 +2 bludgeoning			
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp" />
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">false</set>
+			<set name="weapon">Maul</set>
+		</setters>
+		<supports>
+			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+		</supports>
+	</element>
 </elements>
