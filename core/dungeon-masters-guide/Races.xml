@@ -1,79 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-	<info>
-		<name>Fairy</name>
-		<description>A small, magical being with innate spellcasting abilities and flight.</description>
-		<author>Your Name</author>
-		<update version="0.4.3">
-			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
-		</update>
-	</info>
-	<element name="Fairy" type="Race" source="Your Source" id="ID_RACE_FAIRY">
-		<description>
-			<!-- Fairy race description -->
-			<p>
-				<span class="feature">Ability Score Increase.</span>
+  <info>
+    <name>Fairy</name>
+    <description>A small, magical being with innate spellcasting abilities and flight.</description>
+    <author>Your Name</author>
+    <update version="0.4.4">
+      <file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
+    </update>
+  </info>
+
+  <element name="Fairy" type="Race" source="Your Source" id="ID_RACE_FAIRY">
+  <description>
+    <!-- Fairy race description -->
+    <p>
+      <span class="feature">Ability Score Increase.</span>
       Increase one ability score by 2 and another by 1, or increase three different scores by 1 each.
-    
-			</p>
-			<!-- Additional descriptions -->
-		</description>
-		<rules>
-			<!-- Present two options to the user -->
-			<choose>
-				<!-- Option 1: Increase one ability score by 2 and another by 1 -->
-				<option text="Increase one ability score by 2 and another by 1">
-					<!-- User selects the first ability score to increase by 2 -->
-					<select type="Ability Score" name="Ability Score Increase (+2)">
-						<stat name="strength" value="2" />
-						<stat name="dexterity" value="2" />
-						<stat name="constitution" value="2" />
-						<stat name="intelligence" value="2" />
-						<stat name="wisdom" value="2" />
-						<stat name="charisma" value="2" />
-					</select>
-					<!-- User selects the second ability score to increase by 1 -->
-					<select type="Ability Score" name="Ability Score Increase (+1)">
-						<stat name="strength" value="1" />
-						<stat name="dexterity" value="1" />
-						<stat name="constitution" value="1" />
-						<stat name="intelligence" value="1" />
-						<stat name="wisdom" value="1" />
-						<stat name="charisma" value="1" />
-					</select>
-				</option>
-				<!-- Option 2: Increase three different ability scores by 1 each -->
-				<option text="Increase three different ability scores by 1 each">
-					<!-- User selects the first ability score to increase by 1 -->
-					<select type="Ability Score" name="Ability Score Increase (+1)">
-						<stat name="strength" value="1" />
-						<stat name="dexterity" value="1" />
-						<stat name="constitution" value="1" />
-						<stat name="intelligence" value="1" />
-						<stat name="wisdom" value="1" />
-						<stat name="charisma" value="1" />
-					</select>
-					<!-- User selects the second ability score to increase by 1 -->
-					<select type="Ability Score" name="Ability Score Increase (+1)">
-						<stat name="strength" value="1" />
-						<stat name="dexterity" value="1" />
-						<stat name="constitution" value="1" />
-						<stat name="intelligence" value="1" />
-						<stat name="wisdom" value="1" />
-						<stat name="charisma" value="1" />
-					</select>
-					<!-- User selects the third ability score to increase by 1 -->
-					<select type="Ability Score" name="Ability Score Increase (+1)">
-						<stat name="strength" value="1" />
-						<stat name="dexterity" value="1" />
-						<stat name="constitution" value="1" />
-						<stat name="intelligence" value="1" />
-						<stat name="wisdom" value="1" />
-						<stat name="charisma" value="1" />
-					</select>
-				</option>
-			</choose>
-			<!-- Additional rules -->
-		</rules>
-	</element>
+    </p>
+    <!-- Additional descriptions -->
+  </description>
+  <rules>
+    <!-- Present two options to the user -->
+    <choose>
+      <!-- Option 1: Increase one ability score by 2 and another by 1 -->
+      <option text="Increase one ability score by 2 and another by 1">
+        <!-- User selects the first ability score to increase by 2 -->
+        <select type="Ability Score" name="Ability Score Increase (+2)">
+          <stat name="strength" value="2" />
+          <stat name="dexterity" value="2" />
+          <stat name="constitution" value="2" />
+          <stat name="intelligence" value="2" />
+          <stat name="wisdom" value="2" />
+          <stat name="charisma" value="2" />
+        </select>
+        <!-- User selects the second ability score to increase by 1 -->
+        <select type="Ability Score" name="Ability Score Increase (+1)">
+          <stat name="strength" value="1" />
+          <stat name="dexterity" value="1" />
+          <stat name="constitution" value="1" />
+          <stat name="intelligence" value="1" />
+          <stat name="wisdom" value="1" />
+          <stat name="charisma" value="1" />
+        </select>
+      </option>
+      <!-- Option 2: Increase three different ability scores by 1 each -->
+      <option text="Increase three different ability scores by 1 each">
+        <!-- User selects the first ability score to increase by 1 -->
+        <select type="Ability Score" name="Ability Score Increase (+1)">
+          <stat name="strength" value="1" />
+          <stat name="dexterity" value="1" />
+          <stat name="constitution" value="1" />
+          <stat name="intelligence" value="1" />
+          <stat name="wisdom" value="1" />
+          <stat name="charisma" value="1" />
+        </select>
+        <!-- User selects the second ability score to increase by 1 -->
+        <select type="Ability Score" name="Ability Score Increase (+1)">
+          <stat name="strength" value="1" />
+          <stat name="dexterity" value="1" />
+          <stat name="constitution" value="1" />
+          <stat name="intelligence" value="1" />
+          <stat name="wisdom" value="1" />
+          <stat name="charisma" value="1" />
+        </select>
+        <!-- User selects the third ability score to increase by 1 -->
+        <select type="Ability Score" name="Ability Score Increase (+1)">
+          <stat name="strength" value="1" />
+          <stat name="dexterity" value="1" />
+          <stat name="constitution" value="1" />
+          <stat name="intelligence" value="1" />
+          <stat name="wisdom" value="1" />
+          <stat name="charisma" value="1" />
+        </select>
+      </option>
+    </choose>
+    <!-- Additional rules -->
+  </rules>
+</element>
+
 </elements>
