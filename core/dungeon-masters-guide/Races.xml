@@ -4,7 +4,7 @@
 		<name>Fairy</name>
 		<description>A small, magical being with innate spellcasting abilities and flight.</description>
 		<author>Your Name</author>
-		<update version="0.5.3">
+		<update version="0.5.4">
 			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
 		</update>
 	</info>
@@ -36,7 +36,7 @@
 			<set name="weight" modifier="1d4">25 lb.</set>
 		</setters>
 		<rules>
-			<stat name="innate speed" value="25" bonus="base"/>
+			<stat name="innate speed" value="30" bonus="base"/>
 			<stat name="innate speed:fly" value="30" bonus="base"/>
 			<grant type="Size" id="ID_SIZE_SMALL"/>
 			<grant type="Language" id="ID_LANGUAGE_COMMON"/>
