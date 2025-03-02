@@ -4,7 +4,7 @@
     <name>Fairy</name>
     <description>A small, magical being with innate spellcasting abilities and flight.</description>
     <author>Your Name</author>
-    <update version="0.4.9">
+    <update version="0.5">
       <file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
     </update>
   </info>
@@ -14,7 +14,7 @@
       <p class="flavor">Fairies are small, magical beings known for their playful nature and innate connection to the mystical energies of the world.</p>
 
       <h4>Ability Score Increase.</h4>
-      <p>Your Dexterity and Charisma scores each increase by 1.</p>
+      <p>Increase one stat by 2 and another by 1 or three stats by 1.</p>
 
       <h4>Age.</h4>
       <p>Fairies reach maturity at a similar age to humans but can live up to 500 years.</p>
