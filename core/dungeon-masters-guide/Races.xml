@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <race name="Fairy" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_MPMOTM_RACE_FAIRY">
+  <element name="Fairy" type="Race" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_MPMOTM_RACE_FAIRY">
+    <description>
+      <p>Infused with the magic of the Feywild, fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. Most fairies look like small elves with insectile wings, but each has a unique characteristic that sets them apart.</p>
+    </description>
+    <size>Small</size>
+    <speed>30</speed>
+    <abilityscorebonuses>
+      <bonus ability="choice" value="2" />
+      <bonus ability="choice" value="1" />
+    </abilityscorebonuses>
+    <languages>
+      <language>Common</language><?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Fairy" type="Race" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_MPMOTM_RACE_FAIRY">
     <description>
       <p>Infused with the magic of the Feywild, fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. Most fairies look like small elves with insectile wings, but each has a unique characteristic that sets them apart.</p>
     </description>
@@ -20,7 +33,30 @@
           <p>You know the <i>Druidcraft</i> cantrip. Starting at 3rd level, you can cast the <i>Faerie Fire</i> spell with this trait. Starting at 5th level, you can also cast the <i>Enlarge/Reduce</i> spell with this trait. Once you cast <i>Faerie Fire</i> or <i>Enlarge/Reduce</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is the ability increased by this race's Ability Score Increase trait.</p>
         </description>
         <spells>
-          <spell name="Druidcraft" level="0" />
+          <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+          <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" usage="1/long rest" />
+          <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" usage="1/long rest" />
+        </spells>
+      </trait>
+      <trait name="Flight">
+        <description>
+          <p>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+        </description>
+        <speed type="fly" value="30" conditional="!armor:medium,!armor:heavy" />
+      </trait>
+    </traits>
+  </element>
+</elements>
+
+      <language>choice</language>
+    </languages>
+    <traits>
+      <trait name="Fairy Magic">
+        <description>
+          <p>You know the <i>Druidcraft</i> cantrip. Starting at 3rd level, you can cast the <i>Faerie Fire</i> spell with this trait. Starting at 5th level, you can also cast the <i>Enlarge/Reduce</i> spell with this trait. Once you cast <i>Faerie Fire</i> or <i>Enlarge/Reduce</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is the ability increased by this race's Ability Score Increase trait.</p>
+        </description>
+        <spells>
+          <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT />
           <spell name="Faerie Fire" level="1" usage="1/long rest" />
           <spell name="Enlarge/Reduce" level="2" usage="1/long rest" />
         </spells>
@@ -32,5 +68,5 @@
         <speed type="fly" value="30" conditional="!armor:medium,!armor:heavy" />
       </trait>
     </traits>
-  </race>
+  </element>
 </elements>
