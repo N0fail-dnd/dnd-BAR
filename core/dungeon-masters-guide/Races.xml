@@ -9,7 +9,7 @@
     </update>
   </info>
 
-  <element name="Fairy" type="Race" source="Your Source" id="ID_RACE_FAIRY">
+  <element name="Fairy" type="Race" source="Homebrew" id="ID_RACE_FAIRY">
   <description>
     <!-- Fairy race description -->
     <p>
