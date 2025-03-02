@@ -49,7 +49,7 @@
       <grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
       <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
       <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
-      <select type="Ability Score Improvement" name="Fairy Racial ASI" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|CHARISMA " />
+      <select type="Racial Trait" name="Ability Score Increase (Fairy)" supports="Fairy" number="3" />
     </rules>
   </element>
 </elements>
