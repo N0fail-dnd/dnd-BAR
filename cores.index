@@ -3,7 +3,7 @@
 	<info>
 		<name>Core</name>
 		<description>The content from the core rulebooks.</description>
-		<update version="0.3.1">
+		<update version="0.3.2">
 			<file name="cores.index" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/cores.index" />
 		</update>
 	</info>
