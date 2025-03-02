@@ -1,68 +1,56 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
-	<info>
-		<name>Fairy</name>
-		<update version="0.3">
-			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
-		</update>
-	</info>
-	<element name="Fairy" type="Race" source="The Wild Beyond the Witchlight" id="ID_RACE_FAIRY">
-		<description>
-			<p class="flavor">Fairies are small, magical creatures with a strong connection to nature and the Feywild. They are known for their playful personalities and innate spellcasting abilities.</p>
-			<h4>FAIRY TRAITS</h4>
-			<p>Your fairy character has the following racial traits.</p>
-			<p>
-				<span class="feature">Ability Score Increase.</span> Increase one ability score by 2, and increase a different one by 1, or increase three different scores by 1 each.
-				<br/>
-				<span class="feature">Creature Type.</span> You are a Fey.
-				<br/>
-				<span class="feature">Size.</span> You are Small.
-				<br/>
-				<span class="feature">Speed.</span> Your base walking speed is 30 feet.
-				<br/>
-				<span class="feature">Fairy Magic.</span> You know the druidcraft cantrip. Starting at 3rd level, you can cast faerie fire once per day. Starting at 5th level, you can also cast enlarge/reduce once per day. You can cast these spells without material components, and you regain the ability to cast them this way when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).
-				<br/>
-				<span class="feature">Flight.</span> You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.
-				<br/>
-				<span class="feature">Languages.</span> You can speak, read, and write Common and Sylvan.
-				<br/>
-			</p>
-		</description>
-		<sheet display="false" />
-		<setters>
-			<set name="height" modifier="2d4">2'7"</set>
-			<set name="weight" modifier="1d4">35 lb.</set>
-		</setters>
-		<rules>
-			<!-- Ability Score Increase is flexible and should be handled during character creation -->
-			<stat name="innate speed" value="30" bonus="base"/>
-			<stat name="innate speed:fly" value="30" bonus="base"/>
-			<grant type="Size" id="ID_SIZE_SMALL" />
-			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_MAGIC" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT" />
-		</rules>
-	</element>
-	<element name="Fairy Magic" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_RACIAL_TRAIT_FAIRY_MAGIC">
-		<description>
-			<p>You know the druidcraft cantrip. Starting at 3rd level, you can cast faerie fire once per day. Starting at 5th level, you can also cast enlarge/reduce once per day. You can cast these spells without material components, and you regain the ability to cast them this way when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).</p>
-		</description>
-		<sheet>
-			<description>You can cast certain spells innately: druidcraft cantrip; faerie fire (1/day at 3rd level); enlarge/reduce (1/day at 5th level).</description>
-		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_SPELL_DRUIDCRAFT" />
-			<grant type="Spell" id="ID_SPELL_FAERIE_FIRE" level="3" usage="1/Long Rest" />
-			<grant type="Spell" id="ID_SPELL_ENLARGE_REDUCE" level="5" usage="1/Long Rest" />
-		</rules>
-	</element>
-	<element name="Fairy Flight" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT">
-		<description>
-			<p>You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
-		</description>
-		<sheet>
-			<description>You have a flying speed equal to your walking speed, but you can't use it while wearing medium or heavy armor.</description>
-		</sheet>
-	</element>
+  <info>
+    <name>Fairy</name>
+    <description>A small, magical being with innate spellcasting abilities and flight.</description>
+    <author>Your Name</author>
+    <update version="1.0">
+      <!-- URL to your hosted XML file for updates -->
+    </update>
+  </info>
+
+  <element name="Fairy" type="Race" source="Homebrew" id="ID_RACE_FAIRY">
+    <description>
+      <p class="flavor">Fairies are small, magical beings known for their playful nature and innate connection to the mystical energies of the world.</p>
+
+      <h4>Ability Score Increase.</h4>
+      <p>Your Dexterity and Charisma scores each increase by 1.</p>
+
+      <h4>Age.</h4>
+      <p>Fairies reach maturity at a similar age to humans but can live up to 500 years.</p>
+
+      <h4>Alignment.</h4>
+      <p>Most fairies are chaotic, valuing personal freedom and expression.</p>
+
+      <h4>Size.</h4>
+      <p>Fairies are about 2 to 3 feet tall and weigh around 30 pounds. Your size is Small.</p>
+
+      <h4>Speed.</h4>
+      <p>Your base walking speed is 25 feet.</p>
+
+      <h4>Flight.</h4>
+      <p>You have a flying speed of 30 feet. You can't use this flying speed while wearing medium or heavy armor.</p>
+
+      <h4>Fairy Magic.</h4>
+      <p>You know the <i>Druidcraft</i> cantrip. When you reach 3rd level, you can cast the <i>Faerie Fire</i> spell once per day. Charisma is your spellcasting ability for these spells.</p>
+
+      <h4>Languages.</h4>
+      <p>You can speak, read, and write Common and Sylvan.</p>
+    </description>
+    <setters>
+      <set name="height" modifier="2d4">2'0"</set>
+      <set name="weight" modifier="1d4">25 lb.</set>
+    </setters>
+    <rules>
+      <stat name="dexterity" value="1"/>
+      <stat name="charisma" value="1"/>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <stat name="innate speed:fly" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
+      <grant type="Spell" id="ID_SPELL_DRUIDCRAFT"/>
+      <grant type="Spell" id="ID_SPELL_FAERIE_FIRE"/>
+    </rules>
+  </element>
 </elements>
