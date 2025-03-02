@@ -3,7 +3,7 @@
 	<info>
 		<name>Fairy</name>
 		<update version="0.3">
-			<file name="Races.xml" url="https://your-content-url/race-fairy.xml" />
+			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
 		</update>
 	</info>
 	<element name="Fairy" type="Race" source="The Wild Beyond the Witchlight" id="ID_RACE_FAIRY">
