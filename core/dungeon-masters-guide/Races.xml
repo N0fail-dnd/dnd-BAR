@@ -4,11 +4,11 @@
 		<name>Fairy</name>
 		<description>A small, magical being with innate spellcasting abilities and flight.</description>
 		<author>Your Name</author>
-		<update version="0.5.5">
+		<update version="0.5.6">
 			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
 		</update>
 	</info>
-	<element name="Fairy" type="Race" source="Homebrew" id="ID_RACE_FAIRY">
+	<element name="Fairy" type="Race" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACE_FAIRY">
 		<description>
 			<p class="flavor">Fairies are small, magical beings known for their playful nature and innate connection to the mystical energies of the world.</p>
 			<h4>Ability Score Increase.</h4>
@@ -25,8 +25,11 @@
 			<p>You have a flying speed of 30 feet. You can't use this flying speed while wearing medium or heavy armor.</p>
 			<h4>Fairy Magic.</h4>
 			<p>You know the 
+				
 				<i>Druidcraft</i> cantrip. When you reach 3rd level, you can cast the 
+				
 				<i>Faerie Fire</i> spell once per day. Charisma is your spellcasting ability for these spells.
+			
 			</p>
 			<h4>Languages.</h4>
 			<p>You can speak, read, and write Common and Sylvan.</p>
@@ -43,57 +46,111 @@
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
 			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
 			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
-			<select type="Racial Trait" name="Ability Score Increase (Fairy)" supports="Fairy" number="3" />
+			<select type="Racial Trait" name="Ability Score Increase (Fairy) +2" supports="Fairy" number="1" />
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_STRENGTH">
 		<compendium display="false" />
 		<supports>Fairy</supports>
 		<description>
-			<p>Your Strength score increases by 1.</p>
+			<p>Your Strength score increases by 2.</p>
 		</description>
 		<rules>
-			<stat name="strength" value="1"/>
+			<stat name="strength" value="2"/>
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_DEXTERITY">
 		<compendium display="false" />
 		<supports>Fairy</supports>
 		<description>
-			<p>Your Dexterity score increases by 1.</p>
+			<p>Your Dexterity score increases by 2.</p>
 		</description>
 		<rules>
-			<stat name="dexterity" value="1"/>
+			<stat name="dexterity" value="2"/>
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_CONSTITUTION">
 		<compendium display="false" />
 		<supports>Fairy</supports>
 		<description>
-			<p>Your Constitution score increases by 1.</p>
+			<p>Your Constitution score increases by 2.</p>
 		</description>
 		<rules>
-			<stat name="constitution" value="1"/>
+			<stat name="constitution" value="2"/>
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_INTELLIGENCE">
 		<compendium display="false" />
 		<supports>Fairy</supports>
 		<description>
-			<p>Your Intelligence score increases by 1.</p>
+			<p>Your Intelligence score increases by 2.</p>
 		</description>
 		<rules>
-			<stat name="intelligence" value="1"/>
+			<stat name="intelligence" value="2"/>
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_WISDOM">
 		<compendium display="false" />
 		<supports>Fairy</supports>
 		<description>
-			<p>Your Wisdom score increases by 1.</p>
+			<p>Your Wisdom score increases by 2.</p>
 		</description>
 		<rules>
-			<stat name="wisdom" value="1"/>
+			<stat name="wisdom" value="2"/>
 		</rules>
 	</element>
+	<rules>
+		<select type="Racial Trait" name="Ability Score Increase +1 (Fairy)" supports="Fairy" number="1" />
+	</rules>
+</element>
+<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_STRENGTH">
+	<compendium display="false" />
+	<supports>Fairy</supports>
+	<description>
+		<p>Your Strength score increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="strength" value="1"/>
+	</rules>
+</element>
+<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_DEXTERITY">
+	<compendium display="false" />
+	<supports>Fairy</supports>
+	<description>
+		<p>Your Dexterity score increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="dexterity" value="1"/>
+	</rules>
+</element>
+<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_CONSTITUTION">
+	<compendium display="false" />
+	<supports>Fairy</supports>
+	<description>
+		<p>Your Constitution score increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="constitution" value="1"/>
+	</rules>
+</element>
+<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_INTELLIGENCE">
+	<compendium display="false" />
+	<supports>Fairy</supports>
+	<description>
+		<p>Your Intelligence score increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="intelligence" value="1"/>
+	</rules>
+</element>
+<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_WISDOM">
+	<compendium display="false" />
+	<supports>Fairy</supports>
+	<description>
+		<p>Your Wisdom score increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="wisdom" value="1"/>
+	</rules>
+</element>
 </elements>
