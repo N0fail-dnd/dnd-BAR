@@ -4,77 +4,51 @@
     <name>Fairy</name>
     <description>A small, magical being with innate spellcasting abilities and flight.</description>
     <author>Your Name</author>
-    <update version="0.4.4">
+    <update version="0.4.5">
       <file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
     </update>
   </info>
 
   <element name="Fairy" type="Race" source="Homebrew" id="ID_RACE_FAIRY">
-  <description>
-    <!-- Fairy race description -->
-    <p>
-      <span class="feature">Ability Score Increase.</span>
-      Increase one ability score by 2 and another by 1, or increase three different scores by 1 each.
-    </p>
-    <!-- Additional descriptions -->
-  </description>
-  <rules>
-    <!-- Present two options to the user -->
-    <choose>
-      <!-- Option 1: Increase one ability score by 2 and another by 1 -->
-      <option text="Increase one ability score by 2 and another by 1">
-        <!-- User selects the first ability score to increase by 2 -->
-        <select type="Ability Score" name="Ability Score Increase (+2)">
-          <stat name="strength" value="2" />
-          <stat name="dexterity" value="2" />
-          <stat name="constitution" value="2" />
-          <stat name="intelligence" value="2" />
-          <stat name="wisdom" value="2" />
-          <stat name="charisma" value="2" />
-        </select>
-        <!-- User selects the second ability score to increase by 1 -->
-        <select type="Ability Score" name="Ability Score Increase (+1)">
-          <stat name="strength" value="1" />
-          <stat name="dexterity" value="1" />
-          <stat name="constitution" value="1" />
-          <stat name="intelligence" value="1" />
-          <stat name="wisdom" value="1" />
-          <stat name="charisma" value="1" />
-        </select>
-      </option>
-      <!-- Option 2: Increase three different ability scores by 1 each -->
-      <option text="Increase three different ability scores by 1 each">
-        <!-- User selects the first ability score to increase by 1 -->
-        <select type="Ability Score" name="Ability Score Increase (+1)">
-          <stat name="strength" value="1" />
-          <stat name="dexterity" value="1" />
-          <stat name="constitution" value="1" />
-          <stat name="intelligence" value="1" />
-          <stat name="wisdom" value="1" />
-          <stat name="charisma" value="1" />
-        </select>
-        <!-- User selects the second ability score to increase by 1 -->
-        <select type="Ability Score" name="Ability Score Increase (+1)">
-          <stat name="strength" value="1" />
-          <stat name="dexterity" value="1" />
-          <stat name="constitution" value="1" />
-          <stat name="intelligence" value="1" />
-          <stat name="wisdom" value="1" />
-          <stat name="charisma" value="1" />
-        </select>
-        <!-- User selects the third ability score to increase by 1 -->
-        <select type="Ability Score" name="Ability Score Increase (+1)">
-          <stat name="strength" value="1" />
-          <stat name="dexterity" value="1" />
-          <stat name="constitution" value="1" />
-          <stat name="intelligence" value="1" />
-          <stat name="wisdom" value="1" />
-          <stat name="charisma" value="1" />
-        </select>
-      </option>
-    </choose>
-    <!-- Additional rules -->
-  </rules>
-</element>
+    <description>
+      <p class="flavor">Fairies are small, magical beings known for their playful nature and innate connection to the mystical energies of the world.</p>
 
+      <h4>Ability Score Increase.</h4>
+      <p>Your Dexterity and Charisma scores each increase by 1.</p>
+
+      <h4>Age.</h4>
+      <p>Fairies reach maturity at a similar age to humans but can live up to 500 years.</p>
+
+      <h4>Alignment.</h4>
+      <p>Most fairies are chaotic, valuing personal freedom and expression.</p>
+
+      <h4>Size.</h4>
+      <p>Fairies are about 2 to 3 feet tall and weigh around 30 pounds. Your size is Small.</p>
+
+      <h4>Speed.</h4>
+      <p>Your base walking speed is 25 feet.</p>
+
+      <h4>Flight.</h4>
+      <p>You have a flying speed of 30 feet. You can't use this flying speed while wearing medium or heavy armor.</p>
+
+      <h4>Fairy Magic.</h4>
+      <p>You know the <i>Druidcraft</i> cantrip. When you reach 3rd level, you can cast the <i>Faerie Fire</i> spell once per day. Charisma is your spellcasting ability for these spells.</p>
+
+      <h4>Languages.</h4>
+      <p>You can speak, read, and write Common and Sylvan.</p>
+    </description>
+    <setters>
+      <set name="height" modifier="2d4">2'0"</set>
+      <set name="weight" modifier="1d4">25 lb.</set>
+    </setters>
+    <rules>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <stat name="innate speed:fly" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
+      <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
+      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
+    </rules>
+  </element>
 </elements>
