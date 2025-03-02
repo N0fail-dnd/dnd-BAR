@@ -9,6 +9,6 @@
 	</info>
 	<files>
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/items-weapons.xml" />
-		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
+		<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
 	</files>
 </index>
