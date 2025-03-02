@@ -1,36 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
-  <element name="Fairy" type="Race" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_MPMOTM_RACE_FAIRY">
-    <description>
-      <p>Infused with the magic of the Feywild, fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. Most fairies look like small elves with insectile wings, but each has a unique characteristic that sets them apart.</p>
-    </description>
-    <size>Small</size>
-    <speed>30</speed>
-    <abilityscorebonuses>
-      <bonus ability="choice" value="2" />
-      <bonus ability="choice" value="1" />
-    </abilityscorebonuses>
-    <languages>
-      <language>Common</language>
-      <language>choice</language>
-    </languages>
-    <traits>
-      <trait name="Fairy Magic">
-        <description>
-          <p>You know the <i>Druidcraft</i> cantrip. Starting at 3rd level, you can cast the <i>Faerie Fire</i> spell with this trait. Starting at 5th level, you can also cast the <i>Enlarge/Reduce</i> spell with this trait. Once you cast <i>Faerie Fire</i> or <i>Enlarge/Reduce</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level. Your spellcasting ability for these spells is the ability increased by this race's Ability Score Increase trait.</p>
-        </description>
-        <spells>
-          <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
-          <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" usage="1/long rest" />
-          <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" usage="1/long rest" />
-        </spells>
-      </trait>
-      <trait name="Flight">
-        <description>
-          <p>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
-        </description>
-        <speed type="fly" value="30" conditional="!armor:medium,!armor:heavy" />
-      </trait>
-    </traits>
-  </element>
+	<info>
+		<name>Fairy</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/wild-beyond-witchlight">Wizards of the Coast</author>
+		<update version="0.1.0">
+			<file name="race-fairy.xml" url="https://your-content-url/race-fairy.xml" />
+		</update>
+	</info>
+	<element name="Fairy" type="Race" source="The Wild Beyond the Witchlight" id="ID_RACE_FAIRY">
+		<description>
+			<p class="flavor">Fairies are small, magical creatures with a strong connection to nature and the Feywild. They are known for their playful personalities and innate spellcasting abilities.</p>
+			<h4>FAIRY TRAITS</h4>
+			<p>Your fairy character has the following racial traits.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Increase one ability score by 2, and increase a different one by 1, or increase three different scores by 1 each.
+				<br/>
+				<span class="feature">Creature Type.</span> You are a Fey.
+				<br/>
+				<span class="feature">Size.</span> You are Small.
+				<br/>
+				<span class="feature">Speed.</span> Your base walking speed is 30 feet.
+				<br/>
+				<span class="feature">Fairy Magic.</span> You know the druidcraft cantrip. Starting at 3rd level, you can cast faerie fire once per day. Starting at 5th level, you can also cast enlarge/reduce once per day. You can cast these spells without material components, and you regain the ability to cast them this way when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).
+				<br/>
+				<span class="feature">Flight.</span> You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.
+				<br/>
+				<span class="feature">Languages.</span> You can speak, read, and write Common and Sylvan.
+				<br/>
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d4">2'7"</set>
+			<set name="weight" modifier="1d4">35 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase is flexible and should be handled during character creation -->
+			<stat name="innate speed" value="30" bonus="base"/>
+			<stat name="innate speed:fly" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_MAGIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT" />
+		</rules>
+	</element>
+	<element name="Fairy Magic" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_RACIAL_TRAIT_FAIRY_MAGIC">
+		<description>
+			<p>You know the druidcraft cantrip. Starting at 3rd level, you can cast faerie fire once per day. Starting at 5th level, you can also cast enlarge/reduce once per day. You can cast these spells without material components, and you regain the ability to cast them this way when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).</p>
+		</description>
+		<sheet>
+			<description>You can cast certain spells innately: druidcraft cantrip; faerie fire (1/day at 3rd level); enlarge/reduce (1/day at 5th level).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_SPELL_FAERIE_FIRE" level="3" usage="1/Long Rest" />
+			<grant type="Spell" id="ID_SPELL_ENLARGE_REDUCE" level="5" usage="1/Long Rest" />
+		</rules>
+	</element>
+	<element name="Fairy Flight" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT">
+		<description>
+			<p>You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed equal to your walking speed, but you can't use it while wearing medium or heavy armor.</description>
+		</sheet>
+	</element>
 </elements>
