@@ -4,7 +4,7 @@
 		<name>Fairy</name>
 		<description>A small, magical being with innate spellcasting abilities and flight.</description>
 		<author>Your Name</author>
-		<update version="0.5.6">
+		<update version="0.5.8">
 			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
 		</update>
 	</info>
@@ -46,7 +46,8 @@
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
 			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
 			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
-			<select type="Racial Trait" name="Ability Score Increase (Fairy) +2" supports="Fairy" number="1" />
+			<select type="Racial Trait" name="Ability Score Increase +2 (Fairy)" supports="Fairy" number="1" />
+			<select type="Racial Trait" name="Ability Score Increase +1 (Fairy)" supports="Fairy" number="1" />
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_STRENGTH">
@@ -99,10 +100,6 @@
 			<stat name="wisdom" value="2"/>
 		</rules>
 	</element>
-	<rules>
-		<select type="Racial Trait" name="Ability Score Increase +1 (Fairy)" supports="Fairy" number="1" />
-	</rules>
-</element>
 <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Mordenkainen Presents: Monsters of the Multiverse" id="ID_RACIAL_TRAIT_FAIRY_STRENGTH">
 	<compendium display="false" />
 	<supports>Fairy</supports>
