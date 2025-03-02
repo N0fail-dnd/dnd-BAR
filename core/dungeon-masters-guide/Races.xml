@@ -1,55 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <info>
-    <name>Fairy</name>
-    <description>A small, magical being with innate spellcasting abilities and flight.</description>
-    <author>Your Name</author>
-    <update version="0.5.1">
-      <file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
-    </update>
-  </info>
-
-  <element name="Fairy" type="Race" source="Homebrew" id="ID_RACE_FAIRY">
-    <description>
-      <p class="flavor">Fairies are small, magical beings known for their playful nature and innate connection to the mystical energies of the world.</p>
-
-      <h4>Ability Score Increase.</h4>
-      <p>Increase one stat by 2 and another by 1 or three stats by 1.</p>
-
-      <h4>Age.</h4>
-      <p>Fairies reach maturity at a similar age to humans but can live up to 500 years.</p>
-
-      <h4>Alignment.</h4>
-      <p>Most fairies are chaotic, valuing personal freedom and expression.</p>
-
-      <h4>Size.</h4>
-      <p>Fairies are about 2 to 3 feet tall and weigh around 30 pounds. Your size is Small.</p>
-
-      <h4>Speed.</h4>
-      <p>Your base walking speed is 25 feet.</p>
-
-      <h4>Flight.</h4>
-      <p>You have a flying speed of 30 feet. You can't use this flying speed while wearing medium or heavy armor.</p>
-
-      <h4>Fairy Magic.</h4>
-      <p>You know the <i>Druidcraft</i> cantrip. When you reach 3rd level, you can cast the <i>Faerie Fire</i> spell once per day. Charisma is your spellcasting ability for these spells.</p>
-
-      <h4>Languages.</h4>
-      <p>You can speak, read, and write Common and Sylvan.</p>
-    </description>
-    <setters>
-      <set name="height" modifier="2d4">2'0"</set>
-      <set name="weight" modifier="1d4">25 lb.</set>
-    </setters>
-    <rules>
-      <stat name="innate speed" value="25" bonus="base"/>
-      <stat name="innate speed:fly" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-      <grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
-      <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
-      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
-      <select type="Racial Trait" name="Ability Score Increase (Fairy)" supports="Fairy" number="3" />
-    </rules>
-  </element>
+	<info>
+		<name>Fairy</name>
+		<description>A small, magical being with innate spellcasting abilities and flight.</description>
+		<author>Your Name</author>
+		<update version="0.5.2">
+			<file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
+		</update>
+	</info>
+	<element name="Fairy" type="Race" source="Homebrew" id="ID_RACE_FAIRY">
+		<description>
+			<p class="flavor">Fairies are small, magical beings known for their playful nature and innate connection to the mystical energies of the world.</p>
+			<h4>Ability Score Increase.</h4>
+			<p>Increase one stat by 2 and another by 1 or three stats by 1.</p>
+			<h4>Age.</h4>
+			<p>Fairies reach maturity at a similar age to humans but can live up to 500 years.</p>
+			<h4>Alignment.</h4>
+			<p>Most fairies are chaotic, valuing personal freedom and expression.</p>
+			<h4>Size.</h4>
+			<p>Fairies are about 2 to 3 feet tall and weigh around 30 pounds. Your size is Small.</p>
+			<h4>Speed.</h4>
+			<p>Your base walking speed is 25 feet.</p>
+			<h4>Flight.</h4>
+			<p>You have a flying speed of 30 feet. You can't use this flying speed while wearing medium or heavy armor.</p>
+			<h4>Fairy Magic.</h4>
+			<p>You know the 
+				<i>Druidcraft</i> cantrip. When you reach 3rd level, you can cast the 
+				<i>Faerie Fire</i> spell once per day. Charisma is your spellcasting ability for these spells.
+			</p>
+			<h4>Languages.</h4>
+			<p>You can speak, read, and write Common and Sylvan.</p>
+		</description>
+		<setters>
+			<set name="height" modifier="2d4">2'0"</set>
+			<set name="weight" modifier="1d4">25 lb.</set>
+		</setters>
+		<rules>
+			<stat name="innate speed" value="25" bonus="base"/>
+			<stat name="innate speed:fly" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_SMALL"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON"/>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
+			<select type="Racial Trait" name="Ability Score Increase (Fairy)" supports="Fairy" number="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_STRENGTH">
+		<compendium display="false" />
+		<supports>Half-Elf</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_DEXTERITY">
+		<compendium display="false" />
+		<supports>Half-Elf</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Half-Elf</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Half-Elf</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_WISDOM">
+		<compendium display="false" />
+		<supports>Half-Elf</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
 </elements>
