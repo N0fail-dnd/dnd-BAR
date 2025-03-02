@@ -4,7 +4,7 @@
     <name>Fairy</name>
     <description>A small, magical being with innate spellcasting abilities and flight.</description>
     <author>Your Name</author>
-    <update version="0.4">
+    <update version="0.4.1">
       <file name="Races.xml" url="https://raw.githubusercontent.com/N0fail-dnd/dnd-BAR/refs/heads/main/core/dungeon-masters-guide/Races.xml" />
     </update>
   </info>
@@ -49,8 +49,8 @@
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>
       <grant type="Language" id="ID_LANGUAGE_SYLVAN"/>
-      <grant type="Spell" id="ID_SPELL_DRUIDCRAFT"/>
-      <grant type="Spell" id="ID_SPELL_FAERIE_FIRE"/>
+      <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT"/>
+      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE"/>
     </rules>
   </element>
 </elements>
