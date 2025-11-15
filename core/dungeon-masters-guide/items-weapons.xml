@@ -342,4 +342,27 @@
 			<support proficiency="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 		</supports>
 	</element>
+			<element name="Fanny Pack of Holding (Lesser)" type="Magic Item" source="Homebrew BAR" id="ID_FANNY_PACK_OF_HOLDING_LESSER">
+		<description>
+			<p>This slightly tacky, magically stitched leather fanny pack can hold far more than it appears. Though unfashionable, it is absurdly practical.</p>
+			<p>While worn around the waist, this fanny pack opens into a small extradimensional space. It can hold up to 50 pounds of gear in a space not exceeding 5 cubic feet. Regardless of what’s inside, it always weighs 2 pounds.</p>
+			<p>Retrieving an item from the fanny pack requires an action, and the wearer must name the item they are searching for aloud.</p>
+			<p><i>Though useful, wearing it is... deeply uncool. Something about it makes you feel just a little bit socially radioactive.</i></p>
+			<p><b>Curse (Minor).</b> While wearing this fanny pack, your Charisma score is reduced by 1 (to a minimum of 1).</p>
+		</description>
+
+		<setters>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">waist</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weight">2</set>
+			<set name="attunement">false</set>
+		</setters>
+
+		<rules>
+			<stat name="charisma" value="-1" />
+		</rules>
+	</element>
+
 </elements>
